@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+.DS_Store
+
+# generated outputs (keep folder structure via .gitkeep if desired)
+results/*.csv
+results/analysis_report.txt
+results/figures/*.png

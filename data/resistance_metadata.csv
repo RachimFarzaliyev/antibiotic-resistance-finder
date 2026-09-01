@@ -1,0 +1,6 @@
+gene_name,antibiotic_class,resistance_mechanism,reference_source
+blaTEM,Beta-lactams (Penicillins),Beta-lactamase hydrolyzes beta-lactam ring,Demo/educational; for real data see NCBI Gene / CARD ARO:3000186 (blaTEM-1)
+mecA,Beta-lactams (Methicillin/Oxacillin),Alternative penicillin-binding protein PBP2a with low beta-lactam affinity,Demo/educational; for real data see NCBI Gene / CARD ARO:3000617 (mecA)
+tetA,Tetracyclines,Efflux pump exports tetracycline from the cell,Demo/educational; for real data see NCBI Gene / CARD ARO:3000165 (tetA)
+sul1,Sulfonamides,Drug-insensitive dihydropteroate synthase,Demo/educational; for real data see NCBI Gene / CARD ARO:3000420 (sul1)
+vanA,Glycopeptides (Vancomycin),Alters peptidoglycan precursor target (D-Ala-D-Lac) reducing vancomycin binding,Demo/educational; for real data see NCBI Gene / CARD ARO:3000589 (vanA)
