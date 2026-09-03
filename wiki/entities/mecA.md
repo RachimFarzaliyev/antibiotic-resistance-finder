@@ -44,5 +44,5 @@ Native staphylococcal PBPs (PBP1, PBP2, PBP3, PBP4) are responsible for cross-li
 ## Related Pages
 - Mechanism: [[target-modification]]
 - Database Reference: [[card-database]]
-- Synthesis: [[amr-mechanisms-overview]]
+- Syntheses: [[amr-mechanisms-overview]], [[mecA-vs-vanA-resistance-comparison]]
 - Source: [[card-amr-foundations-summary]]

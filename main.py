@@ -80,6 +80,12 @@ def parse_args():
         default=None,
         help="Path for text analysis report (default: <output_dir>/analysis_report.txt).",
     )
+    parser.add_argument(
+        "--wiki-links",
+        action=getattr(argparse, "BooleanOptionalAction", "store_true"),
+        default=os.path.isdir("wiki"),
+        help="Include Obsidian [[wikilinks]] cross-referencing wiki pages in reports and logs (default: auto if wiki/ exists).",
+    )
     return parser.parse_args()
 
 
@@ -123,7 +129,7 @@ def main():
     plot_identity_coverage(results_df, figures_dir)
 
     print(f"[main] Writing analysis report to: {report_path}")
-    generate_text_report(stats, results_df, thresholds, report_path)
+    generate_text_report(stats, results_df, thresholds, report_path, include_wiki_links=args.wiki_links)
 
     n_candidates = (results_df["detection_status"] == "CANDIDATE DETECTED").sum()
     print("\n[main] DONE.")
@@ -131,6 +137,10 @@ def main():
         f"[main] {n_candidates} candidate resistance gene(s) detected "
         f"out of {len(results_df)} screened."
     )
+    if n_candidates > 0:
+        for _, row in results_df[results_df["detection_status"] == "CANDIDATE DETECTED"].iterrows():
+            ref = f" -> Wiki: [[{row['gene_name']}]]" if args.wiki_links else ""
+            print(f"        * {row['gene_name']} ({row['percent_identity']}% id, {row['coverage_pct']}% cov){ref}")
     print(
         "[main] NOTE: Results are candidate genes based on sequence "
         "similarity only, not confirmed clinical resistance."

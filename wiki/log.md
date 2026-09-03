@@ -27,3 +27,8 @@ This is an append-only chronological record of operations performed on the Antim
   - Synthesis: `[[pipeline-dataflow-and-architecture]]`
 - **Updated**: `[[pairwise-alignment-screening]]`, `[[index]]`
 - **Summary**: Ingested Python codebase architecture and implementation modules. Documented CLI orchestration, Biopython integration, genomic QC metrics, local pairwise alignment scoring matrix, candidate detection logic, and multi-format reporting.
+
+## [2026-09-04] query | Comparative Analysis: mecA (MRSA) vs vanA (VRE)
+- **Filed to**: `[[wiki/syntheses/mecA-vs-vanA-resistance-comparison]]`
+- **Synthesized from**: `[[wiki/entities/mecA]]`, `[[wiki/entities/vanA]]`, `[[wiki/concepts/target-modification]]`, `[[wiki/syntheses/amr-mechanisms-overview]]`
+- **Summary**: Conducted deep comparative analysis contrasting the target replacement strategy of mecA (PBP2a) in MRSA against the metabolic precursor remodeling of vanA (D-Ala-D-Lac ligase) in VRE, highlighting genetic mobility (SCCmec vs Tn1546), HGT conjugation dynamics, and VRSA superbug convergence.

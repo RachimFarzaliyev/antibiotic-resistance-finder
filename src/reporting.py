@@ -90,6 +90,7 @@ def generate_text_report(
     results_df: pd.DataFrame,
     thresholds,
     report_path: str,
+    include_wiki_links: bool = False,
 ) -> None:
     os.makedirs(os.path.dirname(report_path) or ".", exist_ok=True)
 
@@ -138,8 +139,9 @@ def generate_text_report(
     if len(detected) > 0:
         lines.append("Candidate genes detected:")
         for _, row in detected.iterrows():
+            gene_label = f"{row['gene_name']} (Wiki: [[{row['gene_name']}]])" if include_wiki_links else row['gene_name']
             lines.append(
-                f"  - {row['gene_name']} | class: {row['antibiotic_class']} | "
+                f"  - {gene_label} | class: {row['antibiotic_class']} | "
                 f"mechanism: {row['resistance_mechanism']} | "
                 f"identity: {row['percent_identity']}% | "
                 f"coverage: {row['coverage_pct']}% | "
@@ -154,9 +156,22 @@ def generate_text_report(
     lines.append("-" * 70)
     lines.append(results_df.to_string(index=False))
     lines.append("")
+
+    if include_wiki_links and len(detected) > 0:
+        lines.append("-" * 70)
+        lines.append("5. WIKI KNOWLEDGE BASE CROSS-REFERENCES")
+        lines.append("-" * 70)
+        for _, row in detected.iterrows():
+            g = row["gene_name"]
+            lines.append(f"  - [[{g}]]: Detailed biological profile, genetic vehicles, and clinical context.")
+        lines.append("  - [[amr-mechanisms-overview]]: Cross-cutting comparative resistance mechanisms.")
+        lines.append("  - [[pairwise-alignment-screening]]: Algorithmic scoring and threshold methodology.")
+        lines.append("  - Catalog: [[index|wiki/index.md]]")
+        lines.append("")
+
     lines.append("=" * 70)
     lines.append("END OF REPORT")
     lines.append("=" * 70)
 
-    with open(report_path, "w") as f:
+    with open(report_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))

@@ -31,7 +31,9 @@ Welcome to the **Antibiotic Resistance & Bioinformatics Knowledge Base**. This p
 ## 📊 Syntheses & Architecture
 
 - [[amr-mechanisms-overview]]: Cross-cutting comparative matrix and evolutionary analysis of the four primary resistance strategies across model determinants.
+- [[mecA-vs-vanA-resistance-comparison]]: Comparative biophysical, genetic mobility (SCCmec vs Tn1546), and clinical analysis of MRSA and VRE target modifications.
 - [[pipeline-dataflow-and-architecture]]: End-to-end dataflow, module contracts, dynamic programming parameters, and artifact generation.
+- [[amr-slide-deck]]: Presentation-ready Marp markdown slide deck summarizing AMR mechanisms, model determinants, and pipeline architecture.
 
 ---
 

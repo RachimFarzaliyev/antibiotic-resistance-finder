@@ -45,5 +45,5 @@ Vancomycin binds via five key hydrogen bonds to the terminal **D-Ala-D-Ala** dip
 ## Related Pages
 - Mechanism: [[target-modification]]
 - Database Reference: [[card-database]]
-- Synthesis: [[amr-mechanisms-overview]]
+- Syntheses: [[amr-mechanisms-overview]], [[mecA-vs-vanA-resistance-comparison]]
 - Source: [[card-amr-foundations-summary]]
