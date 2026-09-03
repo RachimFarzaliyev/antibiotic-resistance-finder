@@ -12,3 +12,7 @@ env/
 results/*.csv
 results/analysis_report.txt
 results/figures/*.png
+
+# Obsidian
+.obsidian/
+*.trash/
