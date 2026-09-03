@@ -25,6 +25,7 @@ Welcome to the **Antibiotic Resistance & Bioinformatics Knowledge Base**. This p
 - [[bypass-mechanisms]]: Acquisition or expression of alternative, drug-insensitive metabolic enzymes circumventing chemical blocks.
 - [[pairwise-alignment-screening]]: Bioinformatics local alignment (Smith-Waterman) and dual-threshold candidate screening (identity & coverage).
 - [[genomic-qc-metrics]]: Sequence quality metrics including nucleotide distributions, GC content percentage, and ambiguous base detection.
+- [[obsidian-llm-wiki-guide]]: Practical operating guide for browsing, graph visualization, and pair programming with Obsidian.
 
 ---
 
@@ -33,6 +34,7 @@ Welcome to the **Antibiotic Resistance & Bioinformatics Knowledge Base**. This p
 - [[amr-mechanisms-overview]]: Cross-cutting comparative matrix and evolutionary analysis of the four primary resistance strategies across model determinants.
 - [[mecA-vs-vanA-resistance-comparison]]: Comparative biophysical, genetic mobility (SCCmec vs Tn1546), and clinical analysis of MRSA and VRE target modifications.
 - [[pipeline-dataflow-and-architecture]]: End-to-end dataflow, module contracts, dynamic programming parameters, and artifact generation.
+- [[complete-repository-file-guide]]: Exhaustive technical reference and directory decomposition for every file in this repository.
 - [[amr-slide-deck]]: Presentation-ready Marp markdown slide deck summarizing AMR mechanisms, model determinants, and pipeline architecture.
 
 ---

@@ -32,3 +32,8 @@ This is an append-only chronological record of operations performed on the Antim
 - **Filed to**: `[[wiki/syntheses/mecA-vs-vanA-resistance-comparison]]`
 - **Synthesized from**: `[[wiki/entities/mecA]]`, `[[wiki/entities/vanA]]`, `[[wiki/concepts/target-modification]]`, `[[wiki/syntheses/amr-mechanisms-overview]]`
 - **Summary**: Conducted deep comparative analysis contrasting the target replacement strategy of mecA (PBP2a) in MRSA against the metabolic precursor remodeling of vanA (D-Ala-D-Lac ligase) in VRE, highlighting genetic mobility (SCCmec vs Tn1546), HGT conjugation dynamics, and VRSA superbug convergence.
+
+## [2026-09-04] query | Repository-Wide Documentation and Obsidian LLM Wiki Guide
+- **Filed to**: `[[wiki/syntheses/complete-repository-file-guide]]`, `[[wiki/concepts/obsidian-llm-wiki-guide]]`
+- **Synthesized from**: All repository modules (`main.py`, `src/`, `data/`, `tests/`, `tools/`, `raw/`, `wiki/`)
+- **Summary**: Generated exhaustive file-by-file technical reference documenting data contracts, functions, and architecture across the entire repository. Authored practical operating guide explaining how to leverage Obsidian as an IDE alongside the compounding LLM Wiki.
